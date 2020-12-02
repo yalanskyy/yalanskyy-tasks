@@ -1,0 +1,10 @@
+.container {
+    min-height: 320px;
+    max-width: 900px;
+    border: 1px solid;
+    margin: 0 auto;
+}
+.main-task {
+    margin: auto;
+    max-width: 1000px;
+}
