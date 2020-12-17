@@ -12,10 +12,22 @@ function prepareRender() {
 
   for (let i of arr) {
     if (i) {
-      val += `${i}` + ".";
-    } else val += "G ";
+      val += `${i}`;
+    }
   }
-  console.log(val);
+
+  let newVal = val;
+  for (let item of val) {
+    if (item % 2 === 0) {
+      newVal += item + " ";
+    } else {
+      newVal += item;
+    }
+  }
+  console.log(newVal);
+
+  return newVal;
 }
 
 prepareRender();
+
